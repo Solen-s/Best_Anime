@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.0-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+    <script src="fontawesome-free-6.4.0-web/js/all.min.js"></script>
+
+    <style>
+        body{
+            background-image: url(images/Register.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }  
+        .container{
+            background: rgba(25,25,25, 0.6);
+            max-width: 500px;
+            margin-top: 100px;
+            padding: 40px;
+            border-radius: 20px;
+            color: white;
+        } 
+        .sp{
+            margin-top: 20px;
+        }
+        @media (max-width: 576px) {
+        .container {
+            max-width: 340px;
+        }
+        }
+    </style>
+
+    <title>Rgister Form</title>
+</head>
+<body>
+    <div class="container ">
+        <h2 class="text-center">Register Form</h2>
+        <form action="">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name: </label>
+                <input type="name" class="form-control" placeholder="Enter Your Name" required> 
+            </div>
+            <div class="mb-3">
+                <label for="Phoneuser" class="form-label">Phone Number: </label>
+                <input type="tel" pattern="[0]{1}[0-9]-{9}" placeholder="012789321" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" value="Name@example.com" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control"  id="pswrd" required> 
+                <input class="sp" type="checkbox" onclick="toggleVisibility()"/>Show Password</br>  
+            </div>
+            <button class="btn btn-primary w-100" type="submit" id="submit" class="submit">Register</button>
+        </form>
+    </div>
+
+    <script>
+    function toggleVisibility() {  
+        var getPasword = document.getElementById("pswrd");  
+        if (getPasword.type === "password") {  
+            getPasword.type = "text";  
+        } else {  
+        getPasword.type = "password";  
+        }  
+    }  
+
+        
+    </script>
+</body>
+</html>

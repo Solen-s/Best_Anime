@@ -1,0 +1,230 @@
+    /* 1. Navbar container  */
+
+/* Navbar BackgroudnColor */
+.bg-yellow{
+    background-color: yellow;
+}
+
+
+
+
+
+/* a tag of dropdown-item sytle */
+a.dropdown-item:hover{
+    background-color: rgba(111, 111, 111, 0.9);
+    color: white;
+    border-radius: 30px;
+}
+
+
+
+    /* 2. Carousal slide  */
+
+/* Slide-Style  */
+a.ltt{
+    color: rgb(13, 202, 240);
+    text-decoration: none;
+}
+
+/* Silde-Style  */
+a.ltt:hover{
+    color: rgb(13, 110, 253);
+    text-decoration: underline;
+}
+
+
+
+    /* 3.body */
+
+/* Title of Body = " Best Anime TV */
+.boti{ 
+    margin: 20px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+/* div of Column that have title, img, p and a tag*/
+.a-item{
+    padding: 5px;
+    border: 1px ridge  rgb(235, 222, 222);
+    border-radius: 20px;
+    background-color: rgba(235, 229, 229, 0.7);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* Paragraph in div below img */
+.ap1{
+    padding-left:  5px;
+    padding-right: 5px;
+    margin-top: 8px;
+    color: rgba(0, 0, 0, 0.699);
+}
+
+    /* Trailer Container  */
+/* Video of Boday = "Trialer Animer"  */
+.trail-Ani{
+    margin: 20px 0;
+    text-align: center;
+}
+/* Video Style == video trialer   */
+.video-container{
+    position: relative;
+    /* height: 0; */
+    margin-top: 10px;
+    padding-bottom: 56%;
+    overflow: hidden;
+}
+.video-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* screen bigger than 576px */
+@media screen and (min-width: 576px){
+    /* Buttom */
+    .nav-toggle{
+        display: none;
+    }
+}
+
+
+/* Button Style */
+.custom-toggler.nav-toggle {
+    border-color: rgb(128, 128, 128, 0.8);
+    background-color: #ffd900cf;
+    border: solid 1px;
+    border-color: black;
+    border-radius: 8px;
+    height: 35px;   
+}
+
+/* Button Style */
+.custom-toggler.nav-toggle:hover{
+    background-color: #FFD700;
+    border: 1px;
+    transition: 0.1s;
+    border: double;
+}
+
+/* Button Style */
+.custom-toggler.nav-toggle:focus{
+    background-color: #ffd900cf;
+    border-color: rgb(128, 128, 128, 0.8);
+    border: solid 1px;
+
+}
+
+/* Button Style */
+.custom-toggler.nav-toggle:active{
+    background-color: #e6c400cf;
+    border: outset;
+    border-color: black;
+}
+
+
+/* Screen bigger than 992px */
+@media (min-width: 992px) {
+        /* div of column  */
+        div.r1{
+            height: 893px;   
+                }
+        div.r2{
+            height: 873px;   
+            }
+        div.r3{
+            height: 923px;   
+            } 
+        div.r4{
+            height: 755px;   
+            }
+        .t-me{
+            font-size: 30px;
+        }  
+}
+
+/* screen bigger than 1200px  */
+@media (min-width: 1200px) {
+    /* div of column  */
+    div.r1{
+        height: 828px;  
+            }
+    div.r2{
+        height: 785px;  
+        }
+    div.r3{
+        height: 845px;  
+        } 
+    div.r4{
+        height: 711px;  
+        }
+
+}
+
+/* screen bigger than 768px */
+/* 2 column  */
+@media (min-width: 768px) {
+    /* div of column */
+    .r1wc{
+        height: 840px;   
+            }
+    .r2wc{
+        height: 775px;   
+        }
+    .r3wc{
+        height: 820px;   
+        } 
+    .r4wc{
+        height: 750px;   
+        }
+    .r5wc{
+        height: 870px;
+    }
+    .r6wc{
+        height: 720px;
+    }
+      
+}
+
+/* screen smaller than 576px  */
+@media screen and (max-width: 576px){
+    .navbar-collapse{
+        margin-left: 3px;
+        position: fixed;
+        top: 55px;
+        background-color: rgba(128, 128, 128, 0.9);
+        height: 380px;
+        width: 180px;
+    /* border-radius property: top-left, top-right, bottom-right, bottom-left */
+        border-radius: 5px 8px 10px 5px; 
+        z-index: 1;
+        overflow-y: auto;
+        transition: height 0.3s;
+        /* left: -100%; */
+    }
+    /* to style collapse pose to left
+    .navbar-collapse.show{
+        left: 0;
+        top: 60px;
+    } */
+    a.nav-link, a.dropdown-item{
+        color: white;
+    }
+    div.dropdown-menu{
+        border: hidden;
+        background-color: transparent;
+        position: absolute;
+        top: -20px;
+    }
+
+    .carousel-caption.cslide{
+        margin-top: 10px;
+    }
+
+}
+
+
